@@ -25,5 +25,5 @@ https://www.ibm.com/docs/en/app-connect/cloud?topic=gmail-getting-oauth-client-i
     ```sh
     $ npm start
     ```
-    This serves the api by default on [http://localhost:3000/sendmail](http://localhost:3000/sendmail) 
+    This serves the api by default on [http://localhost:3000](http://localhost:3000) 
     
