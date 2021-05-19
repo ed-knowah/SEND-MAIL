@@ -17,6 +17,7 @@ app.get("/sendmail", (req, res) => {
     try {
       let transporter = nodemailer.createTransport({
         service: "gmail",
+        //initaites 0Auth2 Process
         auth: {
           type: "OAuth2",
           user: process.env.MAIL_USERNAME,
@@ -26,7 +27,7 @@ app.get("/sendmail", (req, res) => {
           refreshToken: process.env.OAUTH_REFRESH_TOKEN,
         },
       });
-
+      //Message Properties
       let mailOptions = {
         from: process.env.MAIL_USERNAME,
         to: process.env.MAIL_USERNAME,
@@ -44,7 +45,7 @@ app.get("/sendmail", (req, res) => {
   sendMail()
     .then((result) => console.log("email sent...", result))
     .catch((error) => console.log(error.message));
-  res.status(200).send("succesfully sent mail");
+  res.send("Check terminal for mail status");
  
 });
 
