@@ -1,5 +1,5 @@
 # SEND-MAIL
-<p>SEND-MAIL allow user's send mail with their Gmail account from the server</p>
+<p>SEND-MAIL allow users send mail with their Gmail account from the server</p>
 
 
 
